@@ -7,12 +7,16 @@ class PlayerArcher {
       this.body = Matter.Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
-      this.collapse = false;
-      this.image = loadImage("./assets/playerArcher.png");
+      //this.collapse = false;
+      this.image = loadImage
+      ("./assets/playerArcher.png");
   
       World.add(world, this.body);
   
-      Matter.Body.setAngle(this.body, -PI / 2); // -90 degree
+      Matter.Body.setAngle(this.body, -PI / 2); 
+      //Matter.Body.setAngle(this.body, -PI ); 
+      //Matter.Body(this.body, -PI ); 
+      //Matter.setAngle(this.body, -PI / 2); 
     }
   
     display() {
